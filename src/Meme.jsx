@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Meme() {
     
-    const [topText, setTopText] = React.useState('Me: I just finished my workout, time to eat simething healthy')
+    const [topText, setTopText] = React.useState('Me: I just finished my workout, time to eat something healthy')
     const [bottomText, setBottomText] = React.useState('Me to me: Eat a whole pizza, you\'ve earned it')
     const [memesData, setMemesData] = React.useState([])
     const [memeImg, setMemeImg] = React.useState('https://i.imgflip.com/1e7ql7.jpg')
