@@ -13,6 +13,8 @@ header {
     padding-inline-end: 3rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+  justify-content: center;
 }
 
 header > img {
@@ -40,6 +42,7 @@ header > img {
     grid-template-columns: 1fr 1fr;
     max-width: 650px;
     margin: 2.25rem auto;
+    padding-inline: 5%;
     column-gap: 1.67rem;
 }
 
@@ -61,7 +64,7 @@ header > img {
 .top-text,
 .bottom-text {
     font-family: impact, sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.2rem;
     color: #FFFFFF;
     text-shadow:
@@ -118,10 +121,16 @@ header > img {
 }
 
 @media screen and (min-width: 40rem) {
+    .grid-container {
+        padding-inline: 0;
+    }
+    
     .top-text,
     .bottom-text {
         font-size: 2rem;
+        font-weight: 900;
     }
+    
     .input {
         grid-column: auto;
     }
